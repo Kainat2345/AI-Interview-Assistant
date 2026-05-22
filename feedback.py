@@ -1,10 +1,27 @@
-def generate_feedback(answer):
+def calculate_ats_score(resume_text, skills):
+    resume_text = resume_text.lower()
 
-    if len(answer) < 50:
-        return "Answer is too short. Add more explanation."
+    keyword_weight = {
+        "python": 20,
+        "machine learning": 25,
+        "sql": 15,
+        "deep learning": 25,
+        "data science": 15
+    }
 
-    elif len(answer) < 150:
-        return "Good answer but can be improved with examples."
+    score = 0
 
+    for skill, weight in keyword_weight.items():
+        if skill in resume_text:
+            score += weight
+
+    return min(score, 100)
+
+
+def get_feedback(score):
+    if score >= 80:
+        return "Excellent Resume 🔥"
+    elif score >= 50:
+        return "Good Resume 👍"
     else:
-        return "Excellent detailed answer!"
+        return "Needs Improvement ⚠️"
