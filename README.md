@@ -1,62 +1,196 @@
+# 🧠 AI Interview Assistant
 
-AI Interview Assistant 🤖
+An AI-powered interview preparation platform built using Streamlit and Gemini AI.
 
-An AI-powered Interview Assistant built with Streamlit and OpenAI API. It can generate interview questions and evaluate user answers intelligently.
+This project helps users:
 
-🚀 Features
-Generate interview questions dynamically
-Evaluate user answers using AI
-Simple Streamlit UI
-ATS-style scoring system (if implemented)
-Secure API key handling using .env
-🛠️ Tech Stack
-Python
-Streamlit
-OpenAI API
-python-dotenv
-📁 Project Structure
+* Upload resumes
+* Analyze skills
+* Generate AI interview questions
+* Get AI-powered feedback
+* Calculate ATS resume score
+* View performance dashboard
+
+---
+
+# 🚀 Features
+
+## 📄 Resume Upload & Analysis
+
+* Upload PDF resumes
+* Extract resume text automatically
+* Detect technical skills
+
+## 🎤 AI Interview Questions
+
+* Gemini AI generates interview questions based on detected skills
+* Technical and role-based interview practice
+
+## 🧠 AI Answer Evaluation
+
+* Get intelligent feedback on answers
+* Improve interview performance
+
+## 📊 ATS Resume Score
+
+* Resume match scoring system
+* ATS-friendly resume analysis
+
+## 📈 Dashboard Analytics
+
+* Interactive performance charts using Plotly
+* Technical skill evaluation visualization
+
+## 🎨 Modern UI
+
+* Responsive dark theme
+* Gradient buttons
+* Interactive cards
+* Professional dashboard design
+
+---
+
+# 🛠️ Tech Stack
+
+* Python
+* Streamlit
+* Google Gemini AI
+* Plotly
+* Pandas
+* PyPDF2
+
+---
+
+# 📂 Project Structure
+
+```bash
 AI-interview-assistant/
-│── app.py
-│── gpt_engine.py
-│── .env
-│── .gitignore
-│── requirements.txt
-│── venv/
-⚙️ Setup Instructions
-1. Clone the repository
-git clone https://github.com/your-username/AI-interview-assistant.git
-cd AI-interview-assistant
-2. Create virtual environment
+│
+├── app.py
+├── gpt_engine.py
+├── feedback.py
+├── resume_parser.py
+├── requirements.txt
+├── assets/
+│   └── logo.png
+└── README.md
+```
+
+---
+
+# ⚙️ Installation
+
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/Kainat2345/AI-Interview-Assistant.git
+```
+
+## 2️⃣ Open Project Folder
+
+```bash
+cd AI-Interview-Assistant
+```
+
+## 3️⃣ Create Virtual Environment
+
+### Mac/Linux
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### Windows
+
+```bash
 python -m venv venv
-source venv/bin/activate   # Mac/Linux
-venv\Scripts\activate      # Windows
-3. Install dependencies
+venv\\Scripts\\activate
+```
+
+---
+
+# 📦 Install Dependencies
+
+```bash
 pip install -r requirements.txt
-4. Add API Key (IMPORTANT)
+```
 
-Create a .env file in the root folder:
+---
 
-OPENAI_API_KEY=your_api_key_here
+# 🔑 Setup Gemini API Key
 
-⚠️ Never upload .env to GitHub.
+Create a `.env` file:
 
-▶️ Run the App
+```env
+GOOGLE_API_KEY=your_api_key_here
+```
+
+Get API key from:
+
+urlGoogle AI Studio[https://aistudio.google.com](https://aistudio.google.com)
+
+---
+
+# ▶️ Run Project
+
+```bash
 streamlit run app.py
-🔐 Security Note
-API keys are stored in .env file
-.env is ignored using .gitignore
-Never hardcode secrets in code
-📌 Git Push Updates
+```
 
-To update existing GitHub repo:
+---
 
-git add .
-git commit -m "Updated project with secure API handling"
-git push origin main
-💡 Future Improvements
-Add speech-to-text interview mode
-Add resume-based question generation
-Deploy on Streamlit Cloud / Render
-👨‍💻 Author
+# 📸 Screenshots
 
-Developed as an AI learning project for interview preparation and practice.
+## Home Page
+
+* Resume Upload
+* AI Interview Questions
+* ATS Score
+
+## Dashboard
+
+* Performance Analytics
+* Skill Evaluation Charts
+
+---
+
+# 🌟 Future Improvements
+
+* 🎤 Voice-based interview
+* 🤖 Real-time AI conversation
+* 📄 Resume suggestions
+* 🌐 Cloud deployment
+* 🧠 AI career recommendations
+* 📊 Advanced analytics
+
+---
+
+# ☁️ Deployment
+
+You can deploy this project using:
+
+* Streamlit Cloud
+* Render
+* Railway
+* Hugging Face Spaces
+
+Streamlit Cloud:
+
+urlStreamlit Community Cloud[https://streamlit.io/cloud](https://streamlit.io/cloud)
+
+---
+
+# 👩‍💻 Author
+
+Developed by Kainat Bashir
+
+GitHub Repository:
+
+urlAI Interview Assistant Repository[https://github.com/Kainat2345/AI-Interview-Assistant](https://github.com/Kainat2345/AI-Interview-Assistant)
+
+---
+
+# 📜 License
+
+This project is open-source and available under the MIT License.
